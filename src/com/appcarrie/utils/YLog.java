@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 
 public class YLog {
-	public static boolean isLog = true;
+	public static boolean isLog = false;
 	
 	public static void e ( String TAG, String msg) {
 		if ( isLog && msg!=null ) {

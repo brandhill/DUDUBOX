@@ -13,6 +13,7 @@ import com.appcarrie.net.NetCallback;
 import com.appcarrie.net.NetworkAPI;
 import com.appcarrie.net.ReturnObjectThread;
 import com.appcarrie.utils.Constants;
+import com.appcarrie.utils.YLog;
 
 public class ContentFetcher extends ReturnObjectThread {
 
@@ -28,6 +29,7 @@ public class ContentFetcher extends ReturnObjectThread {
 		JSONObject body = new JSONObject();
 		try {
 			JSONArray array = new JSONArray(mPref.getString(Constants.FAVORITE_TYPE, "[]"));
+			YLog.e("Fetcher", array.toString(1));
 			body.put(Constants.JSON_TYPE, array);
 			if ( array.length()*2 < DEFAULT_VOICE_COUNT)
 				body.put(Constants.JSON_AMOUNT, DEFAULT_VOICE_COUNT);

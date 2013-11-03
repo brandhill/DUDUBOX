@@ -1,8 +1,6 @@
 package com.appcarrie.loader;
 
-import java.io.File;
 import java.net.URL;
-import java.util.Random;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,7 +8,6 @@ import org.json.JSONObject;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.SparseArray;
 
 import com.appcarrie.net.ReturnObjectThread;
 import com.appcarrie.utils.Constants;
@@ -53,7 +50,7 @@ public class VoiceLoader {
 	}
 
 	public void initVoice() {
-		if ( mCacheList.length() <= 0)
+//		if ( mCacheList.length() <= 0)
 			refreshVoice();
 	}
 	

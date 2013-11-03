@@ -163,8 +163,19 @@ public class MainActivity extends Activity {
 					} 
 					if (mAstroMap.size() == 0)
 						type_astrology.setSelected(false);
-					else
+					else {
 						type_astrology.setSelected(true);
+						JSONArray favorite_type = new JSONArray();
+						
+						Iterator<?> iter = mMap.entrySet().iterator(); 
+						while (iter.hasNext()) { 
+						    Map.Entry entry = (Map.Entry) iter.next(); 
+						    Object key = entry.getKey();
+						    favorite_type.put(key);
+						} 
+						mPref.edit().putString( Constants.FAVORITE_TYPE, favorite_type.toString()).commit();
+						VoiceLoader.getInstance(mContext).initVoice();
+					}
 					if ( mDialog != null)
 						mDialog.dismiss();
 				}
