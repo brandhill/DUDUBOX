@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_actionbar_bg">#56c3bb</color>
+    <color name="color_actionbar_bg_h">#55b3ac</color>
+    <color name="color_bg">#fff7e2</color>
+    <color name="color_title">#5d553e</color>
+    <color name="color_text">#807260</color>
+    <color name="color_dotted">#b3b0a6</color>
+    <color name="transparent_color">#00000000</color>
+    
+    
+    <color name="dialog_bg">#f0ffffff</color>
+    <color name="dialog_title">#57c3bb</color>
+    <color name="dialog_text">#39a69e</color>
+    
+    
+</resources>

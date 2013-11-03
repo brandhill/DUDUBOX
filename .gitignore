@@ -1,0 +1,11 @@
+# generated files
+bin
+gen
+
+# Eclipse project files
+.project
+.classpath
+.settings
+
+# Secure keystore
+*.keystore

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DUDUBOX</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="init_loading">Loading &#8230;</string>
+    <string name="init_gettype">取得列表中</string>
+    
+    
+    <string name="select_title">Smart Call Waiting</string>
+    <string name="select_desc">Replace your outgoing ringback tone with following real time live content from</string>
+    <string name="select_sign">DUDUBOX</string>
+    
+    <string name="select_astro">Pick up your constellation:</string>
+    
+    <string name="type_weather">Weather</string>
+    <string name="type_news">News</string>
+    <string name="type_stock">Stock</string>
+    <string name="type_joke">Joke</string>
+    <string name="type_astrology">Astrology</string>
+    <string name="type_ad">Reward</string>
+    
+    <string-array name="type_astrology">
+		<item>Aries</item>
+		<item>Taurus</item>
+　　		<item>Gemini</item>
+　　  	<item>Cancer</item>
+　　 	<item>Leo</item>
+		<item>Virgo</item>
+		<item>Libra</item>
+		<item>Scorpio</item>
+		<item>Sagittariu</item>
+		<item>Capaicorn</item>
+		<item>Aquarius</item>
+		<item>Pisces</item>
+	</string-array>
+
+    <string name="type_aries">Aries</string>
+    <string name="type_taurus">Taurus</string>
+    <string name="type_gemini">Gemini</string>
+    <string name="type_cancer">Cancer</string>
+    <string name="type_leo">Leo</string>
+    <string name="type_virgo">Virgo</string>
+    <string name="type_libra">Libra</string>
+    <string name="type_scorpio">Scorpio</string>
+    <string name="type_sagittariu">Sagittariu</string>
+    <string name="type_capaicorn">Capaicorn</string>
+    <string name="type_aquarius">Aquarius</string>
+    <string name="type_pisces">Pisces</string>
+    
+    
+    <string name="dialog_confirm">Confirm</string>
+</resources>
