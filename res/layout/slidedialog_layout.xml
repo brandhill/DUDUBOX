@@ -61,7 +61,7 @@
                 android:id="@+id/iv_dialog_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:src="@drawable/callend_back_selector" />
 
             <ImageView
@@ -74,7 +74,7 @@
                 android:id="@+id/iv_dialog_skip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:src="@drawable/callend_skip_selector" />
         </LinearLayout>
     </LinearLayout>

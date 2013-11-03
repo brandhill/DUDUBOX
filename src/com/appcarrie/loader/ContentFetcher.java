@@ -17,7 +17,7 @@ import com.appcarrie.utils.YLog;
 
 public class ContentFetcher extends ReturnObjectThread {
 
-	private static final int DEFAULT_VOICE_COUNT = 5;
+	private static final int DEFAULT_VOICE_COUNT = 1;
 	
 	public ContentFetcher(Context context) {
 		super(context);
@@ -57,6 +57,7 @@ public class ContentFetcher extends ReturnObjectThread {
 			            		mReturnValue.put(array.get(i));
 			                }
 			            }
+			            YLog.e("Fetcher", "return!" + re);
 			        }
 			        mPref.edit()
 			        	.putInt(Constants.VOICE_COUNTER, 0)
