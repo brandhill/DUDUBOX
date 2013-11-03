@@ -31,10 +31,7 @@ public class ContentFetcher extends ReturnObjectThread {
 			JSONArray array = new JSONArray(mPref.getString(Constants.FAVORITE_TYPE, "[]"));
 			YLog.e("Fetcher", array.toString(1));
 			body.put(Constants.JSON_TYPE, array);
-			if ( array.length()*2 < DEFAULT_VOICE_COUNT)
-				body.put(Constants.JSON_AMOUNT, DEFAULT_VOICE_COUNT);
-			else
-				body.put(Constants.JSON_AMOUNT, array.length()*2);
+			body.put(Constants.JSON_AMOUNT, DEFAULT_VOICE_COUNT);
 			NetworkAPI.getVoice(mContext, body, mNetCallback);
 		} catch (Exception e) {}
 		
@@ -57,7 +54,6 @@ public class ContentFetcher extends ReturnObjectThread {
 			            		mReturnValue.put(array.get(i));
 			                }
 			            }
-			            YLog.e("Fetcher", "return!" + re);
 			        }
 			        mPref.edit()
 			        	.putInt(Constants.VOICE_COUNTER, 0)
